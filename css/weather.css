@@ -1,0 +1,82 @@
+div.container-float{
+	overflow:hidden;
+	margin:7px; 
+}
+div.container-float button, div.container-float input {
+	padding: 3px;
+	/*border-radius: 2px;*/
+	cursor: pointer;
+	background: #CCC;
+	/*border: 1px solid #777;*/
+}
+div.container-float button{
+	padding: 5px;
+}
+div.container-float h2{
+	display: inline;
+}
+div.left-float{
+	text-align: center;
+}
+.left-float > div{
+	margin-top: 7px;
+}
+#webcam{
+	width: 100%;
+}
+.navigationButtons{
+	display: flex;
+	justify-content: space-around;
+	max-width: 300px;
+	margin:0 auto;
+}
+.navigationButtons a{
+	flex-basis: 20%;
+	margin-top: 7px;
+}
+#btnGetWeather{
+	margin-left: 7px;
+}
+
+
+#weatherdata{
+	padding-left: 7px;
+}
+#weatherdata .indent{
+	padding-left: 15px;
+}
+@media screen and (min-width: 920px){
+	div.right-float{
+		float: right;
+		width: 30%;
+	}
+	#weatherdata{
+		margin-top: 97px;
+	}
+	div.left-float{
+		float: left;
+		width: 70%;
+	
+	}
+	#grapharia{
+		position: relative;
+	}
+	#grapharia #more-weather ul{
+		list-style: none;
+	}
+	#grapharia #more-weather {
+	    display: none;
+	    text-align: left;
+	    background-color: rgb(221, 221, 221);
+	    padding: 7px;
+	    min-width: 155px;
+	    overflow: visible;
+	    /* margin-left: 20px; */
+	    z-index: 100;
+	}
+	#grapharia:hover #more-weather {
+	    display: block;
+	    position: absolute;
+	}
+
+}

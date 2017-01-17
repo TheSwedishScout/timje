@@ -1,0 +1,34 @@
+#photos{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 7px;
+}
+.photo{
+	height: 150px;
+	margin-bottom: 7px;
+	
+}
+.bigg-image-aria{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.8);
+}
+.bigg-image-aria > div{
+	padding: 7px;
+	background: #FFF;
+	position: absolute;
+	right: 50%;
+	bottom: 50%;
+	display: inline-block;
+	transform: translateX(50%) translateY(50%);
+	max-width: 100%;
+}
+.bigg-image-aria > div img{
+	height: 100%;
+	max-height: 600px;
+	
+}

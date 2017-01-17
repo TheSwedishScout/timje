@@ -1,0 +1,68 @@
+/*Css*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	background-image: url("../images/IMG_3039.JPG");
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+
+}
+#logga{
+	margin-left: 2.5%; 
+}
+
+#sitecontainer{
+	width: 95%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+.site-color{
+	box-sizing: border-box;
+	background-color: rgba(255,255,255,0.85);
+	/*border: 1px 0olid black;*/
+}
+#siteheader{
+	border-bottom: 1px solid black;
+}
+#sitefooter{
+	border-top: 1px solid black;
+}
+.site ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.site ul li{
+	flex-basis: 33.33333%;
+	text-align: center;
+}
+.site ul li a{
+	/*flex-basis: 33.33%;*/
+	padding: 5px 0;
+	display: block;
+	width: 100%;
+	color:#000;
+	text-decoration: none;
+}
+#siteheader.site ul li a:hover{
+	background-color: #ABC;
+	background: linear-gradient(rgba(0,0,0,0.3), rgba(255,255,255,0.3));
+	/*border-radius: 0 0 30px 30px;*/
+}
+#siteheader.site ul li a.active{
+	background: linear-gradient(rgba(255,255,255,0.3), rgba(0,0,0,0.3));
+	color: #000;
+	/*border-radius: 0 0 30px 30px;*/
+ }
+
+
+@media screen and (min-width: 1000px){
+	
+	#sitecontainer{
+		width: 1000px;
+	}
+}
