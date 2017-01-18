@@ -3,6 +3,7 @@
 <head>
 	<title>Timje</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- ****** faviconit.com favicons ****** -->
     <link rel="shortcut icon" href="images/icons/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="images/icons/favicon.ico">
@@ -68,6 +69,7 @@
 	?>
 </head>
 <body>
+<div class="background-image"></div>
 <div id="sitecontainer">
 <div id="loga"><img src="images/Logga.png" alt="Timje.se"></div>
 <div class="site-color">

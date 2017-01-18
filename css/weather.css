@@ -45,6 +45,9 @@ div.left-float{
 #weatherdata .indent{
 	padding-left: 15px;
 }
+#grapharia #more-weather {
+    display: none;
+}
 @media screen and (min-width: 920px){
 	div.right-float{
 		float: right;

@@ -5,9 +5,14 @@
 	margin: 7px;
 }
 .photo{
-	height: 150px;
+	height: 20%;
+	max-height: 150px;
 	margin-bottom: 7px;
-	
+	cursor: pointer;
+}
+.photo:hover{
+	filter:brightness(60%);
+
 }
 .bigg-image-aria{
 	position: fixed;
@@ -25,10 +30,25 @@
 	bottom: 50%;
 	display: inline-block;
 	transform: translateX(50%) translateY(50%);
+	width: 50%;
+	max-width: 800px;
+	
+
+}
+.bigg-image-aria > div.standing{
+	width: auto;
 	max-width: 100%;
+	height: auto;
+	max-height: 600px;	
 }
 .bigg-image-aria > div img{
-	height: 100%;
-	max-height: 600px;
+	width: 100%;
+	//max-width: 600px;
+	height: auto;
 	
+}
+.bigg-image-aria > div.standing img{
+	height: 100%;
+	width: auto;
+	max-height: 400px;
 }
