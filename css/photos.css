@@ -5,8 +5,8 @@
 	margin: 7px;
 }
 .photo{
-	height: 20%;
 	max-height: 150px;
+	
 	margin-bottom: 7px;
 	cursor: pointer;
 }

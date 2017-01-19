@@ -4,6 +4,9 @@
 	padding: 0;
 	border: 0;
 }
+h1{
+	display: none;
+}
 .background-image{
 	position: fixed;
 	left: 0;
@@ -69,6 +72,12 @@
 	/*border-radius: 0 0 30px 30px;*/
  }
 
+@media screen and (min-width: 720px){
+	
+	#sitecontainer{
+		width: 80%;
+	}
+}
 
 @media screen and (min-width: 1000px){
 	

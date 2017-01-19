@@ -147,7 +147,7 @@ include 'php/header.php';
 //include ("php/bildnamnskoriskeringsavweather.php");
 //include ("php/delete.php"); // AV REMMA
 ?>
-	<h1>Weather</h1>
+	
 	<div class="container-float">
 		<div class="left-float">
 			<nav>

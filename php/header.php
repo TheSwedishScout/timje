@@ -58,6 +58,12 @@
 				<link rel="stylesheet" type="text/css" href="css/photos.css">
 				<?php
 			}
+			if(isset($options['portfolie'])){
+				?>
+				<link rel="stylesheet" type="text/css" href="css/portfolie.css">
+				<?php
+			}
+			
 		}
 		
 
@@ -84,9 +90,10 @@
 				<a class = "<?php echo $page=='photos' ? 'active' : ''; ?>" href="photos">Photos</a>
 			</li>
 			<li>
-				<a class = "<?php echo $page=='games' ? 'active' : ''; ?>" href="games">Board games</a>
+				<a class = "<?php echo $page=='portfolie' ? 'active' : ''; ?>" href="portfolie">Portfolie</a>
 			</li>
 		</ul>
 
 	</nav>
 </header>
+<h1><?php echo $page=='index' ? 'Home' : $page; ?></h1>
