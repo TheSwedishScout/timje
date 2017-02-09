@@ -1,6 +1,26 @@
-ul{
+main ul{
 	list-style: none;
+	padding: 7px;
+
 }
-ul li img{
+main ul li{
+	overflow: hidden;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 7px;
+}
+main ul li:last-child{
+	padding-bottom: 0;
+	border-bottom: 0;
+	margin-bottom: 0;	
+}
+main ul li img{
 	max-width: 50%;
+	float: right;
+}
+main ul li .text{
+	float: left;
+	width: 50%;
+	clear: left;
+	box-sizing: border-box;
 }

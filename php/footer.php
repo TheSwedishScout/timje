@@ -1,3 +1,4 @@
+</main>
 <footer id="sitefooter" class="site">
 	<ul>
 		<li>

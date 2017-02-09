@@ -6,7 +6,7 @@
 }
 .photo{
 	max-height: 150px;
-	
+	max-width: 100%;
 	margin-bottom: 7px;
 	cursor: pointer;
 }
@@ -30,7 +30,7 @@
 	bottom: 50%;
 	display: inline-block;
 	transform: translateX(50%) translateY(50%);
-	width: 50%;
+	width: 80%;
 	max-width: 800px;
 	
 
@@ -39,7 +39,7 @@
 	width: auto;
 	max-width: 100%;
 	height: auto;
-	max-height: 600px;	
+	
 }
 .bigg-image-aria > div img{
 	width: 100%;
@@ -48,7 +48,12 @@
 	
 }
 .bigg-image-aria > div.standing img{
-	height: 100%;
+	height: 60vh;
 	width: auto;
-	max-height: 400px;
+	max-height: 600px;
+}
+@media screen and (min-width: 720px){
+	.bigg-image-aria > div{
+		width: 50%;
+	}
 }

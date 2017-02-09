@@ -35,7 +35,7 @@ h1{
 }
 .site-color{
 	box-sizing: border-box;
-	background-color: rgba(255,255,255,0.85);
+	background-color: rgba(255,255,255,0.95);
 	/*border: 1px 0olid black;*/
 }
 #siteheader{
@@ -67,7 +67,7 @@ h1{
 	/*border-radius: 0 0 30px 30px;*/
 }
 #siteheader.site ul li a.active{
-	background: linear-gradient(rgba(255,255,255,0.3), rgba(0,0,0,0.3));
+	background: linear-gradient(rgba(255,255,255,0.3), rgba(77,77,77,0.3));
 	color: #000;
 	/*border-radius: 0 0 30px 30px;*/
  }

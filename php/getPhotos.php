@@ -9,14 +9,14 @@
 
 
 
-function listImages(){
+function listImages( $page = 0){
     $conn = mysqli_connect("localhost","root","","timje_se");
 
     // Check connection
     if (mysqli_connect_errno()){
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
     }else{
-        $sql = "SELECT * FROM `bilder` ORDER by `UPLOAD_TIME`"; // get latest
+        $sql = "SELECT * FROM `bilder` ORDER by `UPLOAD_TIME` LIMIT 50 OFFSET 0"; // get latest
         //var_dump($sql, $options);
         $result = $conn->query($sql);
 
@@ -37,8 +37,14 @@ function listImages(){
     }
 }
 
-$data = listImages();
+if(array_key_exists('page', $_GET)){
+    $page = $_GET['page'];//test_input()
+    $startpage = ($page - 1) *50;
+    $data = listImages($startpage);
+}else{
 
+    $data = listImages();
+}
 
 
 $json = json_encode($data);

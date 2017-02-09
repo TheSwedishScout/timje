@@ -4,6 +4,7 @@
 	<title>Timje</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
 	<!-- ****** faviconit.com favicons ****** -->
     <link rel="shortcut icon" href="images/icons/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="images/icons/favicon.ico">
@@ -70,6 +71,7 @@
 		$page = explode("/", $_SERVER['REQUEST_URI']);
 		$page = array_reverse($page)[0];
 		$page = explode("?", $page)[0];
+		$page = explode(".", $page)[0];
 
 		
 	?>
@@ -84,16 +86,17 @@
 		
 		<ul>
 			<li>
-				<a class = "<?php echo $page=='index' ? 'active' : ''; ?>" href="index">Home</a>
+				<a class = "<?php echo $page=='index' ? 'active' : ''; ?>" href="index.php">Home</a>
 			</li>
 			<li>
-				<a class = "<?php echo $page=='photos' ? 'active' : ''; ?>" href="photos">Photos</a>
+				<a class = "<?php echo $page=='photos' ? 'active' : ''; ?>" href="photos.php">Photos</a>
 			</li>
 			<li>
-				<a class = "<?php echo $page=='portfolie' ? 'active' : ''; ?>" href="portfolie">Portfolie</a>
+				<a class = "<?php echo $page=='portfolie' ? 'active' : ''; ?>" href="portfolie.php">Portfolie</a>
 			</li>
 		</ul>
 
 	</nav>
 </header>
+<main>
 <h1><?php echo $page=='index' ? 'Home' : $page; ?></h1>

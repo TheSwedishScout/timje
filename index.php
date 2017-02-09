@@ -1,4 +1,7 @@
 <?php
+
+
+
 function latest(){ //hämtar senaste bilden
 	$data = scandir("Webcam");
 	$amount = count($data)-1;
@@ -57,7 +60,7 @@ foreach ($data as $name){
 		}
 }
 $clos = getClosestTo($search,$names);
-$closes = date("Y-m-d-H-i-s", $clos); // gmdate
+$closes = gmdate("Y-m-d-H-i-s", $clos); // gmdate
 return $closes;
 }
 
@@ -84,8 +87,8 @@ $exBild = explode ("-",$bild);
 //var_dump($exBild);
 $tid = "$exBild[0]-$exBild[1]-$exBild[2] $exBild[3]:$exBild[4]:$exBild[5]";
 $tid2 = strtotime($tid);
-$titletid = date("Y-m-d", $tid2); // gmdate
-$tid = date("l Y-m-d H:i", $tid2); // gmdate
+$titletid = gmdate("Y-m-d", $tid2); // gmdate
+$tid = gmdate("l Y-m-d H:i", $tid2); // gmdate
 
 $pre = previus($bild);//hemta namn på bilden innan
 $next = nesta($bild);//hemta namn på nästa bild
@@ -152,22 +155,22 @@ include 'php/header.php';
 		<div class="left-float">
 			<nav>
 		        <div class="navigationButtons">
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $yearMinus; ?>"><button>Year</button></a>
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $monthMinus; ?>"><button>Month</button></a>
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $weekMinus; ?>"><button>Week</button></a>
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $dayMinus; ?>"><button>Day</button></a>
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $pre; ?>"><button>Previus</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $yearMinus; ?>"><button>Year</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $monthMinus; ?>"><button>Month</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $weekMinus; ?>"><button>Week</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $dayMinus; ?>"><button>Day</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $pre; ?>"><button>Previus</button></a>
 		        </div>
 		        <div id="timeShow">
-		            <h2><?php echo $tid; ?>&nbsp;&nbsp;</h2><a href="<?php echo basename(__FILE__, '.php');?>"><button>Latest</button></a>
+		            <h2><?php echo $tid; ?>&nbsp;&nbsp;</h2><a href="<?php echo basename(__FILE__, '.php').'.php';?>"><button>Latest</button></a>
 		        </div>
 		        
 		        <div class="navigationButtons">
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $yearPlus; ?>"><button>Year</button></a>
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $monthPlus; ?>"><button>Month</button></a>
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $weekPlus; ?>"><button>Week</button></a>
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $dayPlus; ?>"><button>Day</button></a>
-		            <a href="<?php echo basename(__FILE__, '.php'); ; ?>?date=<?php echo $next; ?>"><button>Next</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $yearPlus; ?>"><button>Year</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $monthPlus; ?>"><button>Month</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $weekPlus; ?>"><button>Week</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $dayPlus; ?>"><button>Day</button></a>
+		            <a href="<?php echo basename(__FILE__, '.php').'.php'; ?>?date=<?php echo $next; ?>"><button>Next</button></a>
 		        </div>
 		    </nav>
 		    
